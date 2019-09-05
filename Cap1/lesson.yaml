@@ -1,0 +1,338 @@
+- Class: meta
+  Course: Triola_Swril_2019_2
+  Lesson: Cap1
+  Author: Murilo Junqueira (m.junqueira@yahoo.com.br)
+  Type: Standard
+  Organization: UFPA-IFCH-PPGCP
+  Version: 2.4.4
+
+
+# Questão 01
+
+- Class: text
+  Output: "Aqui iremos fazer uma seleção de exercícios retirados do livro 'Introdução à Estatística', 
+    de Mário Triola (12a. edição). Por favor resposta os exercícios conforme solicitado e depois envie as 
+    lições ao seu instrutor. A última questão dessa lição te mostrará como fazer isso."
+    
+  
+# Questão 02
+
+- Class: text
+  Output: "Esse conjunto de exercícios diz respeito ao capítulo 1 do livro de Mário Triola. Não deixe de ler o 
+    texto antes de fazer os exercícios!"
+
+
+# Questão 03
+
+- Class: mult_question
+  Output: "1.  Um estudo estatístico pode ter significância estatística, mas não significância prática?"
+  CorrectAnswer: Sim
+  AnswerChoices: Sim;Não
+  AnswerTests: omnitest(correctVal='Sim')
+  Hint: Veja a parte do livro "como mentir com estatística"
+  
+  
+# Questão 04
+
+- Class: mult_question
+  Output: "2a.  Determine se o método de amostragem parece estar correto ou com falhas. 
+    \n\n
+    Uma pesquisa com 721 indivíduos envolveu o fornecimento de informações pessoais ao 
+    usar pontos de acesso WiFi. Os sujeitos da pesquisa foram usuários da Internet que 
+    responderam a uma pergunta publicada na edição eletrônica do USA Today. "
+  CorrectAnswer: "Falhas"
+  AnswerChoices: Correto;Falhas
+  AnswerTests: omnitest(correctVal='Falhas')
+  Hint: Veja a parte do livro "como mentir com estatística"
+  
+
+# Questão 05
+
+- Class: mult_question
+  Output: "2b.  Determine se o método de amostragem parece estar correto ou com falhas. 
+    \n\n
+    Em uma pesquisa com 109 indivíduos, foi pedido a cada um para indicar quantas mensagens 
+    de texto eles enviam e recebem por dia. A amostra consistiu daqueles que optaram por 
+    responder à solicitação publicada no site StatCrunch.  "
+  CorrectAnswer: "Falhas"
+  AnswerChoices: Correto;Falhas
+  AnswerTests: omnitest(correctVal='Falhas')
+  Hint: Veja a parte do livro "como mentir com estatística"
+  
+  
+
+# Questão 06
+
+- Class: mult_question
+  Output: "2c.  Determine se o método de amostragem parece estar correto ou com falhas. 
+    \n\n
+    Em uma pesquisa com 514 profissionais de recursos humanos, foi perguntado a cada um 
+    sobre a importância da aparência de um candidato a emprego. Os sujeitos da pesquisa 
+    foram selecionados aleatoriamente pelos pesquisadores da Harris Interactive. "
+  CorrectAnswer: "Correto"
+  AnswerChoices: Correto;Falhas
+  AnswerTests: omnitest(correctVal='Correto')
+  Hint: Veja a parte do livro "como mentir com estatística"
+  
+  
+
+# Questão 07
+
+- Class: mult_question
+  Output: "2d.  Determine se o método de amostragem parece estar correto ou com falhas. 
+    \n\n
+    Em uma pesquisa de opinião sobre a evolução, os pesquisadores da Gallup selecionaram 
+    e telefonaram aleatoriamente para 1018 adultos nos Estados Unidos."
+  CorrectAnswer: "Correto"
+  AnswerChoices: Correto;Falhas
+  AnswerTests: omnitest(correctVal='Correto')
+  Hint: Veja a parte do livro "como mentir com estatística"
+  
+  
+
+# Questão 08
+
+- Class: mult_question
+  Output: '3. Um editorial do New York Times criticou uma legenda do gráfico que descrevia um 
+    enxaguante bucal “reduz a placa bacteriana nos dentes em mais de 300%”.
+    O que há de errado com esta afirmação?'
+  CorrectAnswer: "os pressupostos da porcentagem não são respeitados"
+  AnswerChoices: O metodo de amostragem é inadequado; a pesquisa não possui fonte confiável; a pesquisa não é experimental;
+    os pressupostos da porcentagem não são respeitados
+  AnswerTests: omnitest(correctVal='os pressupostos da porcentagem não são respeitados')
+  Hint: Veja a parte do livro "como mentir com estatística"
+  
+  
+
+
+
+# Questão 09
+
+- Class: mult_question
+  Output: "4a. Determine qual dos quatro níveis de medição (nominal, ordinal, intervalo, razão) é o mais apropriado.
+    \n\n
+    Cores das M & Ms (vermelho, laranja, amarelo, marrom, azul, verde) listadas no Conjunto de Dados 20 no Apêndice B "
+  CorrectAnswer: nominal
+  AnswerChoices: nominal;ordinal;intervalo;razão
+  AnswerTests: omnitest(correctVal='nominal')
+  Hint: Veja a parte do livro sobre os tipos de variáveis.
+  
+  
+# Questão 10
+
+- Class: mult_question
+  Output: "4b. Determine qual dos quatro níveis de medição (nominal, ordinal, intervalo, razão) é o mais apropriado.
+    \n\n
+    Profundidades (km) dos terremotos listados no Conjunto de Dados 16 do Apêndice B  "
+  CorrectAnswer: razão
+  AnswerChoices: nominal;ordinal;intervalo;razão
+  AnswerTests: omnitest(correctVal='razão')
+  Hint: Veja a parte do livro sobre os tipos de variáveis.
+  
+  
+# Questão 11
+
+- Class: mult_question
+  Output: "4c. Determine qual dos quatro níveis de medição (nominal, ordinal, intervalo, razão) é o mais apropriado.
+    \n\n
+    Anos em que os presidentes dos EUA assumiram o mandato "
+  CorrectAnswer: intervalo
+  AnswerChoices: nominal;ordinal;intervalo;razão
+  AnswerTests: omnitest(correctVal='intervalo')
+  Hint: Veja a parte do livro sobre os tipos de variáveis.
+  
+
+# Questão 12
+
+- Class: mult_question
+  Output: "4d. Determine qual dos quatro níveis de medição (nominal, ordinal, intervalo, razão) é o mais apropriado.
+    \n\n
+    O filme Avatar recebeu uma classificação de 4 estrelas em uma escala de 5 estrelas. "
+  CorrectAnswer: ordinal
+  AnswerChoices: nominal;ordinal;intervalo;razão
+  AnswerTests: omnitest(correctVal='ordinal')
+  Hint: Veja a parte do livro sobre os tipos de variáveis.
+  
+  
+  
+# Questão 13
+
+- Class: mult_question
+  Output: "4e. Determine qual dos quatro níveis de medição (nominal, ordinal, intervalo, razão) é o mais apropriado.
+    \n\n
+    Volumes (cm 3) de cérebros listados no conjunto de dados 6 do apêndice B "
+  CorrectAnswer: razão
+  AnswerChoices: nominal;ordinal;intervalo;razão
+  AnswerTests: omnitest(correctVal='razão')
+  Hint: Veja a parte do livro sobre os tipos de variáveis.
+  
+
+# Questão 14
+
+- Class: mult_question
+  Output: "4f. Determine qual dos quatro níveis de medição (nominal, ordinal, intervalo, razão) é o mais apropriado.
+    \n\n
+    Modelos de carros (Chevrolet Aveo, Honda Civic,…, Buick Lucerne) usados para testes 
+    de colisão, conforme listado no conjunto de dados 13 do apêndice B "
+  CorrectAnswer: nominal
+  AnswerChoices: nominal;ordinal;intervalo;razão
+  AnswerTests: omnitest(correctVal='nominal')
+  Hint: Veja a parte do livro sobre os tipos de variáveis.
+  
+
+# Questão 15
+
+- Class: mult_question
+  Output: "4g. Determine qual dos quatro níveis de medição (nominal, ordinal, intervalo, razão) é o mais apropriado.
+    \n\n
+    Sangue níveis de chumbo baixo, médio e alto usados para descrever os assuntos no conjunto de dados 5 do apêndice B "
+  CorrectAnswer: ordinal
+  AnswerChoices: nominal;ordinal;intervalo;razão
+  AnswerTests: omnitest(correctVal='ordinal')
+  Hint: Veja a parte do livro sobre os tipos de variáveis.
+  
+
+
+# Questão 16
+
+- Class: mult_question
+  Output: "5a. Determine se a descrição fornecida corresponde a um estudo observacional ou a um experimento. 
+    \n\n
+    A Milgram Research Company deseja estudar reações ao estresse, por isso administra pesquisas nas 
+    quais a pessoa que faz as perguntas finge ficar muito zangada com o assunto da pesquisa. A certa 
+    altura, o pesquisador grita com o assunto e pergunta como alguém pode ter opiniões tão 'estúpidas'.  "
+  CorrectAnswer: experimental
+  AnswerChoices: observacional;experimental
+  AnswerTests: omnitest(correctVal='experimental')
+  Hint: Veja a parte do livro sobre os tipos de estudos.
+  
+  
+# Questão 17
+
+- Class: mult_question
+  Output: "5b. Determine se a descrição fornecida corresponde a um estudo observacional ou a um experimento. 
+    \n\n
+    Em um ensaio clínico do medicamento para colesterol Lipitor, 188 indivíduos receberam doses de 20 mg do 
+    medicamento, e 3,7% deles experimentaram náusea (com base nos dados da Pfizer, Inc.).   "
+  CorrectAnswer: experimental
+  AnswerChoices: observacional;experimental
+  AnswerTests: omnitest(correctVal='experimental')
+  Hint: Veja a parte do livro sobre os tipos de estudos.
+  
+  
+# Questão 18
+
+- Class: mult_question
+  Output: "5c. Determine se a descrição fornecida corresponde a um estudo observacional ou a um experimento. 
+    \n\n
+    Emily Rosa, de apenas 9 anos, foi autora de um artigo no Journal of the American Medical Association 
+    depois de testar os terapeutas do toque profissionais. Usando um cartão de papelão, ela segurou a própria 
+    mão acima de uma das mãos do terapeuta, e o terapeuta foi solicitado a identificar a mão que Emily escolheu.   "
+  CorrectAnswer: experimental
+  AnswerChoices: observacional;experimental
+  AnswerTests: omnitest(correctVal='experimental')
+  Hint: Veja a parte do livro sobre os tipos de estudos.
+  
+  
+# Questão 19
+
+- Class: mult_question
+  Output: "5d. Determine se a descrição fornecida corresponde a um estudo observacional ou a um experimento. 
+    \n\n
+    Em um estudo patrocinado pela CocaCola, 12.500 pessoas foram questionadas sobre o que mais contribui 
+    para sua felicidade e 77% dos entrevistados disseram que era sua família ou parceiro."
+  CorrectAnswer: observacional
+  AnswerChoices: observacional;experimental
+  AnswerTests: omnitest(correctVal='observacional')
+  Hint: Veja a parte do livro sobre os tipos de estudos.
+  
+
+# Questão 20
+
+- Class: mult_question
+  Output: "6a. Identifique qual desses tipos de amostragem é usado: aleatório, sistemático, de conveniência, 
+    estratificado ou por agrupamento.  
+    \n\n
+    O autor coletou dados de amostra selecionando aleatoriamente 12 páginas diferentes de Harry Potter e a 
+    Pedra Filosofal e, em seguida, localizando o número de palavras em cada sentença em cada uma dessas páginas. "
+  CorrectAnswer: por agrupamento
+  AnswerChoices: aleatório;sistemático;de conveniência;estratificado;por agrupamento
+  AnswerTests: omnitest(correctVal='por agrupamento')
+  Hint: Veja a parte do livro sobre os tipos de amostragem.
+  
+
+
+# Questão 21
+
+- Class: mult_question
+  Output: "6b. Identifique qual desses tipos de amostragem é usado: aleatório, sistemático, de conveniência, 
+    estratificado ou por agrupamento.  
+    \n\n
+    A sexualidade das mulheres foi discutida no livro de Shere Hite, Women and Love: A Cultural Revolution. 
+    Suas conclusões foram baseadas em dados de amostra que consistiam em 4500 respostas enviadas por 100.000 
+    questionários enviados a mulheres. "
+  CorrectAnswer: de conveniência
+  AnswerChoices: aleatório;sistemático;de conveniência;estratificado;por agrupamento
+  AnswerTests: omnitest(correctVal='de conveniência')
+  Hint: Veja a parte do livro sobre os tipos de amostragem.
+  
+
+
+# Questão 22
+
+- Class: mult_question
+  Output: "6c. Identifique qual desses tipos de amostragem é usado: aleatório, sistemático, de conveniência, 
+    estratificado ou por agrupamento.  
+    \n\n
+    Em uma pesquisa do Pew Research Center, 1007 adultos foram chamados depois que seus números de telefone 
+    foram gerados aleatoriamente por um computador e 85% dos entrevistados conseguiram identificar corretamente 
+    o que é o Twitter."
+  CorrectAnswer: aleatório
+  AnswerChoices: aleatório;sistemático;de conveniência;estratificado;por agrupamento
+  AnswerTests: omnitest(correctVal='aleatório')
+  Hint: Veja a parte do livro sobre os tipos de amostragem.
+  
+
+
+# Questão 23
+
+- Class: mult_question
+  Output: "6d. Identifique qual desses tipos de amostragem é usado: aleatório, sistemático, de conveniência, 
+    estratificado ou por agrupamento.  
+    \n\n
+    Ao coletar dados de Em diferentes localizações de amostras em um lago, um pesquisador usa o 
+    'método de transecção de linha' esticando uma corda pelo lago e coletando amostras a cada intervalo de 
+    5 metros. "
+  CorrectAnswer: sistemático
+  AnswerChoices: aleatório;sistemático;de conveniência;estratificado;por agrupamento
+  AnswerTests: omnitest(correctVal='sistemático')
+  Hint: Veja a parte do livro sobre os tipos de amostragem.
+  
+# Questão 24
+
+- Class: mult_question
+  Output: "6d. Identifique qual desses tipos de amostragem é usado: aleatório, sistemático, de conveniência, 
+    estratificado ou por agrupamento.  
+    \n\n
+    Notícias da CBS A estação de notícias da CBS em Nova York geralmente obtém opiniões 
+    entrevistando vizinhos de uma pessoa que é o foco de uma notícia. "
+  CorrectAnswer: de conveniência
+  AnswerChoices: aleatório;sistemático;de conveniência;estratificado;por agrupamento
+  AnswerTests: omnitest(correctVal='de conveniência')
+  Hint: Veja a parte do livro sobre os tipos de amostragem.
+  
+
+
+  # Questão Final
+
+- Class: mult_question
+  Output: "Parabéns, você terminou sua lição! 
+    \n\n\n\
+    Gostaria de informar ao seu instrutor sobre sua conclusão bem-sucedida desta lição?"
+  CorrectAnswer: NULL
+  AnswerChoices: Sim;Nao
+  AnswerTests: submit_log()
+  Hint: É importante deixar seu instrutor saber que você terminou a lição.
+  
+    
+  # Fim
