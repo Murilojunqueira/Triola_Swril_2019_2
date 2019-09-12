@@ -1,0 +1,263 @@
+- Class: meta
+  Course: Triola_Swril_2019_2
+  Lesson: Cap2
+  Author: Murilo Junqueira (m.junqueira@yahoo.com.br)
+  Type: Standard
+  Organization: UFPA-IFCH-PPGCP
+  Version: 2.4.4
+  
+  
+  # Questão 01
+
+- Class: text
+  Output: "Aqui iremos fazer uma seleção de exercícios retirados do livro 'Introdução à Estatística', 
+    de Mário Triola (12a. edição). Por favor responda os exercícios conforme solicitado e depois envie as 
+    lições ao seu instrutor. A última questão dessa lição te mostrará como fazer isso."
+    
+  # Questão 02
+
+- Class: text
+  Output: "Esse conjunto de exercícios diz respeito ao capítulo 2 do livro de Mário Triola. Não deixe de ler o 
+    texto antes de fazer os exercícios!"
+
+
+# Questão 03
+
+- Class: cmd_question
+  Output: "1. Após a construção de uma distribuição de frequência relativa, resumindo os tempos que os homens 
+    passam todos os dias pensando em mulheres, qual deve ser a soma das frequências relativas?
+    \n\n
+    Responda em decimal ou fração, coloque a resposta exata"
+  CorrectAnswer: 1
+  AnswerTests: omnitest(correctVal = 1)
+  Hint: Pense sobre o que significa a frequência relativa
+
+
+
+# Questão 04
+
+- Class: cmd_question
+  Output: "2. Acidentes fatais de avião Entre acidentes fatais de avião que ocorreram nos últimos 60 anos, 
+    650 foram causados por erro do piloto, 78 foram causados por outro erro humano, 156 foram causados pelo clima, 
+    286 foram causados por problemas mecânicos e 117 foram causados por sabotagem. (Esses resultados são baseados 
+    nos dados do PlaneCrashInfo.com e não incluem aeronaves particulares, aeronaves militares, aeronaves que 
+    transportam 10 ou menos pessoas ou helicópteros.) Qual é a frequência relativa da causa mais comum de 
+    acidente em aviação?
+    \n\n
+    Responda em decimal ou fração, coloque a resposta exata"
+  CorrectAnswer: 650/1287
+  AnswerTests: omnitest(correctVal = 650/1287)
+  Hint: Pense sobre o que significa a frequência relativa
+
+# Questão 05
+
+
+- Class: cmd_question
+  Output: "3a. No exercício 3 - iremos utilizar os dados da tabela de frequência que mostra os ganhadores do Oscar de 
+    melhor atriz e de melhor ator de acordo com sua idade.
+    \n\n
+    O banco de dados 'Oscar' foi pré-carregado na sua memória. Imprima ele na linha de comando."
+  CorrectAnswer: Oscar
+  AnswerTests: omnitest(correctExpr='Oscar')
+  Hint: Basta digitar o nome do objeto, 'Oscar', para ele ser "imprimido" na tela.
+
+# Questão 06
+
+- Class: cmd_question
+  Output: "3b. Qual é a amplitude de classe?
+    \n\n
+    Arredonde para o número inteiro mais próximo."
+  CorrectAnswer: 10
+  AnswerTests: omnitest(correctVal = 10)
+  Hint: "Veja seção 2.2"
+
+
+# Questão 07
+
+- Class: cmd_question
+  Output: "3c. Qual é o ponto médio da primeira classe?
+    \n\n
+    Responda com o valor exato"
+  CorrectAnswer: 24.5
+  AnswerTests: omnitest(correctVal = 24.5)
+  Hint: "Veja seção 2.2"
+
+
+# Questão 07
+
+- Class: cmd_question
+  Output: "3d. Qual é o valor da fronteira entre a primeira e a segunda classe?
+    \n\n
+    Responda em decimal ou fração com o valor exato"
+  CorrectAnswer: 29.5
+  AnswerTests: omnitest(correctVal = 29.5)
+  Hint: "Veja seção 2.2"
+
+
+# Questão 08
+
+- Class: cmd_question
+  Output: "3e. Qual é a porcentagem de atrizes com 50 anos ou mais que ganharam o Oscar?
+    \n\n
+    Responda em decimal ou fração com o valor exato"
+  CorrectAnswer: 8/82
+  AnswerTests: omnitest(correctVal = 8/82)
+  Hint: "Veja seção 2.2"
+
+
+# Questão 09
+
+- Class: cmd_question
+  Output: "3f. Qual é a porcentagem de atores com 50 anos ou mais que ganharam o Oscar?
+    \n\n
+    Responda em decimal ou fração com o valor exato"
+  CorrectAnswer: 20/82
+  AnswerTests: omnitest(correctVal = 20/82)
+  Hint: "Veja seção 2.2"
+
+
+    
+# Questão 10
+
+- Class: text
+  Output: "4. No exercício quatro iremos utilizar os gráficos dos exercícios 21 a 24 da seção 2.4 do livro do Triola.
+    Por favor, observe as figuras presentes nesses exercícios e aponte qual o motivo de esses gráficos serem considerados
+    ruins."
+
+# Questão 11
+
+- Class: mult_question
+  Output: "4a. (Exercício 21, seção 2.4, Triola 2017). O gráfico mostra o número de votos (em milhões) nas eleições 
+    presidenciais de 2008 nos EUA."
+  CorrectAnswer: Gráfico não inicia no zero
+  AnswerChoices: Gráfico não inicia no zero;Pictograma
+  AnswerTests: omnitest(correctVal='Gráfico não inicia no zero')
+  Hint: "Veja seção 2.4"
+
+# Questão 12
+
+- Class: mult_question
+  Output: "4b. (Exercício 22, seção 2.4, Triola 2017). Em 1986, a tarifa do metrô de Nova York custava US $ 1 e, 
+    até o momento, agora custa US $ 2, então o preço dobrou. No gráfico, a nota de US $ 2 é duas vezes 
+    maior e duas vezes mais alta que a nota de US $ 1."
+  CorrectAnswer: Pictograma
+  AnswerChoices: Gráfico não inicia no zero;Pictograma
+  AnswerTests: omnitest(correctVal='Pictograma')
+  Hint: "Veja seção 2.4"
+
+
+# Questão 13
+
+- Class: mult_question
+  Output: "4c. (Exercício 23, seção 2.4, Triola 2017). A China atualmente consome 7,6 milhões de barris de 
+    petróleo por dia, em comparação com o consumo de petróleo dos Estados Unidos de 20,7 milhões de barris de 
+    petróleo por dia. Na ilustração, o barril maior tem cerca de três vezes a largura e três vezes a 
+    altura do barril menor."
+  CorrectAnswer: Pictograma
+  AnswerChoices: Gráfico não inicia no zero;Pictograma
+  AnswerTests: omnitest(correctVal='Pictograma')
+  Hint: "Veja seção 2.4"
+
+
+
+# Questão 14
+
+- Class: mult_question
+  Output: "4d. (Exercício 24, seção 2.4, Triola 2017). O conjunto 14 do apêndice B lista as distâncias de 
+    frenagem (pés) de carros diferentes, e as distâncias de frenagem de três carros são mostradas na 
+    ilustração anexa."
+  CorrectAnswer: Gráfico não inicia no zero
+  AnswerChoices: Gráfico não inicia no zero;Pictograma
+  AnswerTests: omnitest(correctVal='Gráfico não inicia no zero')
+  Hint: "Veja seção 2.4"
+
+
+# Questão 15
+
+- Class: cmd_question
+  Output: "5a. Quando se está construindo uma tabela que representa a distribuição de frequência dos pesos (lb) 
+    dos itens têxteis descartados do Conjunto de Dados 23 no Apêndice B, as duas primeiras classes de uma 
+    distribuição de frequência são '0,00-0,99' e '1,00-1,99'. Qual é a largura da classe?
+    \n\n
+    Arredonde para o número inteiro mais próximo."
+  CorrectAnswer: 1
+  AnswerTests: omnitest(correctVal = 1)
+  Hint: "Veja seção 2.2"
+
+
+# Questão 16
+
+- Class: cmd_question
+  Output: "5b. Usando as mesmas duas primeiras classes do exercício 5a, identifique o limite entre a primeira e a segunda classe.
+    \n\n
+    Responda em decimal ou fração com o valor exato"
+  CorrectAnswer: 0.995
+  AnswerTests: omnitest(correctVal = 0.995)
+  Hint: "Veja seção 2.2"
+
+
+# Questão 17
+
+- Class: mult_question
+  Output: "5c. A primeira classe descrita no exercício 5a tem uma frequência de 51. Se você conhece apenas os limites de classe 
+    fornecidos no Exercício 1 e a frequência de 51, você pode identificar os valores originais de 51 dados?"
+  CorrectAnswer: Não
+  AnswerChoices: Sim;Não
+  AnswerTests: omnitest(correctVal='Não')
+  Hint: "Veja seção 2.2"
+
+
+
+# Questão 18
+
+
+- Class: mult_question
+  Output: "6. Na loteria California Daily 4, quatro dígitos entre 0 e 9 inclusive são selecionados aleatoriamente a cada dia. 
+    Normalmente, esperamos que cada um dos dez dígitos diferentes ocorra em 1/10 das vezes, e uma análise dos resultados do 
+    ano passado mostra que isso de fato aconteceu. Qual distribuição irá representar melhor a frequência dos dígitos da loteria?"
+  CorrectAnswer: Uniforme
+  AnswerChoices: Uniforme;Normal;Normal assimétrica à direita;Normal assimétrica à esquerda
+  AnswerTests: omnitest(correctVal='Uniforme')
+  Hint: "Veja seção 2.4"
+
+
+# Questão 19
+
+- Class: mult_question
+  Output: "7. Em uma investigação sobre a relação entre as pontuações do ENEM e as notas na faculdade dos estudantes
+    universitários, qual dos seguintes gráficos é mais útil: histograma; gráfico de pizza; gráfico de dispersão; gráfico 
+    de dispersão; gráfico de pontos?"
+  CorrectAnswer: gráfico de dispersão
+  AnswerChoices: histograma;gráfico de pizza;gráfico de dispersão;gráfico de pontos
+  AnswerTests: omnitest(correctVal='gráfico de dispersão')
+  Hint: "Veja seção 2.4"
+
+
+# Questão 20
+
+- Class: mult_question
+  Output: "8. Como gerente de controle de qualidade da Sony, você descobre que os CDs com defeito têm várias causas, 
+    incluindo máquinas gastas, erros humanos, suprimentos ruins e maus-tratos à embalagem. Qual dos seguintes gráficos 
+    seria melhor para descrever as causas dos defeitos: histograma; gráfico de dispersão; gráfico de Pareto; gráfico de 
+    ponto; gráfico de pizza?"
+  CorrectAnswer: gráfico de Pareto
+  AnswerChoices: histograma;gráfico de dispersão;gráfico de Pareto;gráfico de ponto;gráfico de pizza
+  AnswerTests: omnitest(correctVal='gráfico de Pareto')
+  Hint: "Ver seção 2.4"
+
+
+
+
+  # Questão Final
+
+- Class: mult_question
+  Output: "Parabéns, você terminou sua lição! 
+    \n\n\n\
+    Gostaria de informar ao seu instrutor sobre sua conclusão bem-sucedida desta lição?"
+  CorrectAnswer: NULL
+  AnswerChoices: Sim;Nao
+  AnswerTests: submit_log()
+  Hint: É importante deixar seu instrutor saber que você terminou a lição.
+  
+    
+  # Fim
