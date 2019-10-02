@@ -1,0 +1,397 @@
+- Class: meta
+  Course: Triola_Swril_2019_2
+  Lesson: Cap3
+  Author: Murilo Junqueira (m.junqueira@yahoo.com.br)
+  Type: Standard
+  Organization: UFPA-IFCH-PPGCP
+  Version: 2.4.4
+  
+  
+# Questão 01
+
+- Class: text
+  Output: "Aqui iremos fazer uma seleção de exercícios retirados do livro 'Introdução à Estatística', 
+    de Mário Triola (12a. edição). Por favor responda os exercícios conforme solicitado e depois envie as 
+    lições ao seu instrutor. A última questão dessa lição te mostrará como fazer isso."
+    
+# Questão 02
+
+- Class: text
+  Output: "Esse conjunto de exercícios diz respeito ao capítulo 3 do livro de Mário Triola. Não deixe de ler o 
+    texto antes de fazer os exercícios!"
+
+
+# Questão 03
+
+- Class: mult_question
+  Output: "1. Listados abaixo estão os ganhos (em milhões de dólares) das celebridades com os 10 
+    maiores rendimentos em um ano recente. As celebridades em ordem são Steven Spielberg, Howard Stern, 
+    George Lucas, Oprah Winfrey, Jerry Seinfeld, Tiger Woods, Dan Brown, Jerry Bruckheimer, 
+    J. K. R owling e Tom Cruise. Esta lista dos '10 principais' não pode ser usada para aprender alguma 
+    coisa sobre os ganhos médios anuais de todas as celebridades. Por que?
+    \n\n
+    332, 302, 235, 225, 100, 90, 88, 84, 75, 67"
+  CorrectAnswer: Amostra Insuficiente e seleção não aleatória
+  AnswerChoices: Amostra Insuficiente e seleção não aleatória;Amostra Insuficiente;Seleção não aleatória
+  AnswerTests: omnitest(correctVal='Amostra Insuficiente e seleção não aleatória')
+  Hint: "Veja seção 3.2"
+  
+# Questão 04  
+
+- Class: cmd_question
+  Output: "2a. Listados abaixo estão os períodos de tempo (em anos) que uma amostra aleatória de estudantes 
+    universitários levou para obter diplomas de bacharel (com base em dados do National Center for 
+    Education Statistics). Qual é o tempo MÉDIO em anos que os estudantes demoram para se diplomar?
+    \n\n
+    4, 4, 4, 4, 4, 4, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 6, 6, 8, 9, 9, 13, 13, 15
+    \n\n
+    Responda em decimal ou fração com o valor exato."
+  CorrectAnswer: 6.5
+  AnswerTests: omnitest(correctVal = 6.5)
+  Hint: "Veja seção 3.2"
+
+
+# Questão 05 
+
+- Class: cmd_question
+  Output: "2a. Listados abaixo estão os períodos de tempo (em anos) que uma amostra aleatória de estudantes 
+    universitários levou para obter diplomas de bacharel (com base em dados do National Center for 
+    Education Statistics). Qual é o tempo MEDIANO em anos que os estudantes demoram para se diplomar?
+    \n\n
+    4, 4, 4, 4, 4, 4, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 6, 6, 8, 9, 9, 13, 13, 15
+    \n\n
+    Responda em decimal ou fração com o valor exato."
+  CorrectAnswer: 4.5
+  AnswerTests: omnitest(correctVal = 4.5)
+  Hint: "Veja seção 3.2"
+
+
+# Questão 06
+
+
+- Class: cmd_question
+  Output: "3a. Nesse exercícicio usaremos as medidas de IMC (Índice de Massa Corporal) descritas no Conjunto
+    de dados ' no Apêndice B. Existe um vetor pré-caregado no R com os valores de IMC de 40 voluntários de pesquisa.
+    Digite 'IMC' para imprimir os valores na tela."
+  CorrectAnswer: IMC
+  AnswerTests: omnitest(correctExpr='IMC')
+  Hint: "Veja seção 3.2"
+
+# Questão 07
+
+- Class: cmd_question
+  Output: "3b. Como a média é muito sensível a valores extremos, dizemos que não é uma medida resistente do 
+    centro. Ao excluir alguns valores baixos e altos, a média aparada fica mais resistente. Para 
+    encontrar a média aparada de 10% para um conjunto de dados, primeiro organize os dados em ordem, 
+    depois exclua os 10% inferiores dos valores e os 10% superiores dos valores e calcule a média 
+    dos valores restantes. Consulte os valores de IMC e altere o valor mais alto de 47,24 para 472,4, 
+    para que o valor de 472,4, tornando ele um valor externo. Após isso, encontre a média dos valores.
+    \n\n
+    Responda em decimal ou fração, com apenas uma casa decimal (ex: 9.9), arredondando para baixo."
+  CorrectAnswer: 39
+  AnswerTests: any_of_exprs('39', '39.1')
+  Hint: "Veja seção 3.2"
+
+
+
+# Questão 08
+
+- Class: cmd_question
+  Output: "3b. No mesmos dados do item anterior, encontre a média aparada de 10%
+    \n\n
+    Responda em decimal ou fração, com apenas uma casa decimal (ex: 9.9), arredondando para baixo."
+  CorrectAnswer: 27.6
+  AnswerTests: any_of_exprs('27.6', '27.5', '27.7')
+  Hint: "Veja seção 3.2"
+
+
+# Questão 09
+
+- Class: cmd_question
+  Output: "3c. Ainda nos dados do exercício anterior, encontre a média aparada de 20%
+    \n\n
+    \n\n
+    Responda em decimal ou fração, com apenas uma casa decimal (ex: 9.9), arredondando para baixo."
+  CorrectAnswer: 27.1
+  AnswerTests: any_of_exprs('27.1', '27', '27.2')
+  Hint: "Veja seção 3.2"
+
+
+# Questão 10
+
+
+- Class: mult_question
+  Output: "4. Qual das seguintes afirmações são verdadeiras? \n\n
+    a. Se cada um dos 25 valores da amostra for igual a 20 min, o desvio padrão da amostra será 0 min. \n\n
+    b. Para qualquer conjunto de valores de amostra, o desvio padrão nunca pode ser um valor negativo. \n\n
+    c. Se o desvio padrão de uma amostra for 3 kg, a variância será 9 kg. \n\n
+    d. Se a variância de uma amostra for 16 metros, o desvio padrão será de 4 metros quadrados. \n\n
+    e. Se o desvio padrão de uma amostra for 25 cm quadrados, a variância será de 5 cm"
+  CorrectAnswer: a, b, c
+  AnswerChoices: a, b, c;a, b, c, d;a, b, c, d, e; a, b, c, e
+  AnswerTests: omnitest(correctVal='a, b, c')
+  Hint: "Veja seção 3.3"
+  
+
+# Questão 11
+
+
+- Class: cmd_question
+  Output: "4. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
+    \n\n
+    a) Listados abaixo estão os períodos de tempo (em anos) que uma amostra aleatória de estudantes 
+    universitários levou para obter diplomas de bacharel (com base em dados do National Center for 
+    Education Statistics).
+    \n\n
+    4, 4, 4, 4, 4, 4, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 6, 6, 8, 9, 9, 13, 13, 15
+    \n\n
+    Qual é a amplitude dos dados?
+    \n\n
+    Responda em decimal ou fração com o valor exato."
+  CorrectAnswer: 11
+  AnswerTests: omnitest(correctVal = 11)
+  Hint: "Veja seção 3.3"
+
+
+
+# Questão 12
+
+
+- Class: cmd_question
+  Output: "4. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
+    \n\n
+    b) Listados abaixo estão os períodos de tempo (em anos) que uma amostra aleatória de estudantes 
+    universitários levou para obter diplomas de bacharel (com base em dados do National Center for 
+    Education Statistics).
+    \n\n
+    4, 4, 4, 4, 4, 4, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 6, 6, 8, 9, 9, 13, 13, 15
+    \n\n
+    Qual é a variância dos dados?
+    \n\n
+    Responda em decimal ou fração com o valor exato."
+  CorrectAnswer: 12.28947
+  AnswerTests: any_of_exprs('12.28947', '12.28948', '12.28946')
+  Hint: "Veja seção 3.3"
+
+# Questão 13
+
+
+- Class: cmd_question
+  Output: "4. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
+    \n\n
+    c) Listados abaixo estão os períodos de tempo (em anos) que uma amostra aleatória de estudantes 
+    universitários levou para obter diplomas de bacharel (com base em dados do National Center for 
+    Education Statistics).
+    \n\n
+    4, 4, 4, 4, 4, 4, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 6, 6, 8, 9, 9, 13, 13, 15
+    \n\n
+    Qual é o desvio padrão dos dados?
+    \n\n
+    Responda em decimal ou fração com o valor exato."
+  CorrectAnswer: 3.505635
+  AnswerTests: any_of_exprs('3.505635', '3.505634', '3.505636')
+  Hint: "Veja seção 3.3"
+
+
+# Questão 14
+
+
+- Class: cmd_question
+  Output: "4. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
+    \n\n
+    d) Os 10 principais rendimentos de celebridades Listados abaixo estão os ganhos (em milhões de dólares) 
+    das celebridades com os 10 maiores rendimentos em um ano recente. As celebridades em ordem são Steven 
+    Spielberg, Howard Stern, George Lucas, Oprah Winfrey, Jerry Seinfeld, Tiger Woods, Dan Brown, Jer Brown 
+    Bruckheimer, J. Rowling e Tom Cruise. 
+    \n\n
+    332, 302, 235, 225, 100, 90, 88, 84, 75, 67 
+    \n\n
+    Qual é a amplitude dos dados?
+    \n\n
+    Responda em decimal ou fração com o valor exato."
+  CorrectAnswer: 265
+  AnswerTests: omnitest(correctVal = 265)
+  Hint: "Veja seção 3.3"
+
+
+# Questão 15
+
+
+- Class: cmd_question
+  Output: "4. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
+    \n\n
+    e) Os 10 principais rendimentos de celebridades Listados abaixo estão os ganhos (em milhões de dólares) 
+    das celebridades com os 10 maiores rendimentos em um ano recente. As celebridades em ordem são Steven 
+    Spielberg, Howard Stern, George Lucas, Oprah Winfrey, Jerry Seinfeld, Tiger Woods, Dan Brown, Jer Brown 
+    Bruckheimer, J. Rowling e Tom Cruise. 
+    \n\n
+    332, 302, 235, 225, 100, 90, 88, 84, 75, 67 
+    \n\n
+    Qual é a variância dos dados?
+    \n\n
+    Responda em decimal ou fração com o valor exato."
+  CorrectAnswer: 10547.96
+  AnswerTests: any_of_exprs('10547.96', '10547.97', '10547.98')
+  Hint: "Veja seção 3.3"
+
+
+
+# Questão 16
+
+
+- Class: cmd_question
+  Output: "4. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
+    \n\n
+    f) Os 10 principais rendimentos de celebridades Listados abaixo estão os ganhos (em milhões de dólares) 
+    das celebridades com os 10 maiores rendimentos em um ano recente. As celebridades em ordem são Steven 
+    Spielberg, Howard Stern, George Lucas, Oprah Winfrey, Jerry Seinfeld, Tiger Woods, Dan Brown, Jer Brown 
+    Bruckheimer, J. Rowling e Tom Cruise. 
+    \n\n
+    332, 302, 235, 225, 100, 90, 88, 84, 75, 67 
+    \n\n
+    Qual é o desvio padrão dos dados?
+    \n\n
+    Responda em decimal ou fração com o valor exato."
+  CorrectAnswer: 102.7032
+  AnswerTests: any_of_exprs('102.7032', '102.7031', '102.7033')
+  Hint: "Veja seção 3.3"
+
+
+# Questão 17
+
+- Class: cmd_question
+  Output: "4. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
+    \n\n
+    g) Em determinada sala, as notas dos alunos são as seguintes:
+    \n\n
+    7.5, 6, 4, 9.5, 9.8, 6, 7, 2, 6.5
+    \n\n
+    Qual é o desvio padrão populacional dos dados?
+    \n\n
+    Responda em decimal ou fração com o valor exato."
+  CorrectAnswer: 2.31266
+  AnswerTests: any_of_exprs('2.31266', '2.31265', '2.31267')
+  Hint: "Veja seção 3.3"
+
+
+# Questão 18
+
+- Class: cmd_question
+  Output: "5a. Taxas de pulso de mulheres Com base no conjunto de dados 1 do apêndice B, as mulheres têm 
+    taxas de pulso com uma média de 77,5 batimentos por minuto e um desvio padrão de 11,6 batimentos 
+    por minuto. (Todas essas pulsações são medidas em repouso.) A partir de qual número os batimentos
+    cardíacos são considerados acima no normal?
+    \n\n
+    Responda em decimal ou fração com o valor exato."
+  CorrectAnswer: 100.7
+  AnswerTests: omnitest(correctVal = 100.7)
+  Hint: "Veja seção 3.3"
+
+
+# Questão 19
+
+- Class: cmd_question
+  Output: "5b. Taxas de pulso de homens com base no conjunto de dados 1 do apêndice B, os homens têm 
+    taxas de pulso com uma média de 67,3 batimentos por minuto e um desvio padrão de 10,3 batimentos 
+    por minuto. (Todas essas pulsações são medidas em repouso.) A partir de qual número os batimentos
+    cardíacos são considerados abaixo no normal?
+    \n\n
+    Responda em decimal ou fração com o valor exato."
+  CorrectAnswer: 46.7
+  AnswerTests: omnitest(correctVal = 46.7)
+  Hint: "Veja seção 3.3"
+
+
+# Questão 20
+
+
+- Class: mult_question
+  Output: "6a. Qual medida dos quartis que equivale á mediana?"
+  CorrectAnswer: Q2
+  AnswerChoices: Q1;Q2;Q3;Q4
+  AnswerTests: omnitest(correctVal='Q2')
+  Hint: "Veja seção 3.4"
+  
+# Questão 21
+
+- Class: cmd_question
+  Output: "6b. Escreva o número do percentil que corresponte ao Q3 (terceiro quartil):"
+  CorrectAnswer: 75
+  AnswerTests: omnitest(correctVal = 75)
+  Hint: "Veja seção 3.4"
+
+
+# Questão 22
+
+- Class: cmd_question
+  Output: "7a. A contagem de glóbulos vermelhos com base no conjunto de dados 1 do apêndice B, os 
+    homens têm contagens de glóbulos vermelhos com média de 5,072 e desvio padrão de 0,395, enquanto as 
+    mulheres têm contagens de glóbulos vermelhos com média de 4,577 e desvio padrão de 0,382. 
+    \n\n
+    Qual é o escore z de um homem com contagem de 4,91?
+    \n\n
+    Responda em decimal ou fração com o valor exato."
+  CorrectAnswer: -0.4101266
+  AnswerTests: omnitest(correctVal = -0.4101266)
+  Hint: "Veja seção 3.4"
+
+# Questão 23
+
+- Class: cmd_question
+  Output: "7b. A contagem de glóbulos vermelhos com base no conjunto de dados 1 do apêndice B, os 
+    homens têm contagens de glóbulos vermelhos com média de 5,072 e desvio padrão de 0,395, enquanto as 
+    mulheres têm contagens de glóbulos vermelhos com média de 4,577 e desvio padrão de 0,382. 
+    \n\n
+    Qual é o escore z de um homem com contagem de 4,32?
+    \n\n
+    Responda em decimal ou fração com o valor exato."
+  CorrectAnswer: -0.6727749
+  AnswerTests: omnitest(correctVal = -0.6727749)
+  Hint: "Veja seção 3.4"
+
+# Questão 24
+
+- Class: mult_question
+  Output: "7c. Quem tem a contagem mais alta em relação à amostra de onde veio: um 
+    homem com uma contagem de 4,91 ou uma mulher com uma contagem de 4,32?"
+  CorrectAnswer: Mulher
+  AnswerChoices: Mulher;Homem
+  AnswerTests: omnitest(correctVal='Mulher')
+  Hint: "Veja seção 3.4"
+ 
+
+# Questão 25
+
+- Class: mult_question
+  Output: "8. Amostragem Logo após a destruição das torres do World Trade Center, a America Online 
+    fez uma pesquisa com seus assinantes da Internet e fez a seguinte pergunta: “As torres do World 
+    Trade Center devem ser reconstruídas?” Entre as 1.304.240 respostas, 768.731 responderam “sim” 
+    286.756 respondeu “não” e 248.753 disseram que era “muito cedo para decidir”. Dado o grande tamanho da 
+    amostra e a natureza da pesquisa, podemos considerar a capacidade dessa pesquisa para mostrar
+    a capacidade dessa pesquisa mostrar corretamente a opinião média dos americanos como:"
+  CorrectAnswer: Baixa
+  AnswerChoices: Alta;Média;Baixa
+  AnswerTests: omnitest(correctVal='Baixa')
+  Hint: "Reveja o capítulo 1"
+ 
+ 
+ # Questão 26
+
+- Class: text
+  Output: "Reflita por que essa pesquisa, mesmo com uma amostra tão grande, não é confiável!"
+ 
+
+
+# Questão Final
+
+- Class: mult_question
+  Output: "Parabéns, você terminou sua lição! 
+    \n\n\n\
+    Gostaria de informar ao seu instrutor sobre sua conclusão bem-sucedida desta lição?"
+  CorrectAnswer: NULL
+  AnswerChoices: Sim;Nao
+  AnswerTests: submit_log()
+  Hint: É importante deixar seu instrutor saber que você terminou a lição.
+  
+    
+  # Fim
