@@ -54,7 +54,7 @@
 # Questão 05 
 
 - Class: cmd_question
-  Output: "2a. Listados abaixo estão os períodos de tempo (em anos) que uma amostra aleatória de estudantes 
+  Output: "2b. Listados abaixo estão os períodos de tempo (em anos) que uma amostra aleatória de estudantes 
     universitários levou para obter diplomas de bacharel (com base em dados do National Center for 
     Education Statistics). Qual é o tempo MEDIANO em anos que os estudantes demoram para se diplomar?
     \n\n
@@ -137,7 +137,7 @@
 
 
 - Class: cmd_question
-  Output: "4. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
+  Output: "5. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
     \n\n
     a) Listados abaixo estão os períodos de tempo (em anos) que uma amostra aleatória de estudantes 
     universitários levou para obter diplomas de bacharel (com base em dados do National Center for 
@@ -158,7 +158,7 @@
 
 
 - Class: cmd_question
-  Output: "4. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
+  Output: "5. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
     \n\n
     b) Listados abaixo estão os períodos de tempo (em anos) que uma amostra aleatória de estudantes 
     universitários levou para obter diplomas de bacharel (com base em dados do National Center for 
@@ -177,7 +177,7 @@
 
 
 - Class: cmd_question
-  Output: "4. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
+  Output: "5. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
     \n\n
     c) Listados abaixo estão os períodos de tempo (em anos) que uma amostra aleatória de estudantes 
     universitários levou para obter diplomas de bacharel (com base em dados do National Center for 
@@ -197,7 +197,7 @@
 
 
 - Class: cmd_question
-  Output: "4. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
+  Output: "5. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
     \n\n
     d) Os 10 principais rendimentos de celebridades Listados abaixo estão os ganhos (em milhões de dólares) 
     das celebridades com os 10 maiores rendimentos em um ano recente. As celebridades em ordem são Steven 
@@ -218,7 +218,7 @@
 
 
 - Class: cmd_question
-  Output: "4. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
+  Output: "5. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
     \n\n
     e) Os 10 principais rendimentos de celebridades Listados abaixo estão os ganhos (em milhões de dólares) 
     das celebridades com os 10 maiores rendimentos em um ano recente. As celebridades em ordem são Steven 
@@ -240,7 +240,7 @@
 
 
 - Class: cmd_question
-  Output: "4. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
+  Output: "5. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
     \n\n
     f) Os 10 principais rendimentos de celebridades Listados abaixo estão os ganhos (em milhões de dólares) 
     das celebridades com os 10 maiores rendimentos em um ano recente. As celebridades em ordem são Steven 
@@ -260,7 +260,7 @@
 # Questão 17
 
 - Class: cmd_question
-  Output: "4. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
+  Output: "5. Encontre a amplitude, a variância e o desvio padrão para os dados de amostra fornecidos.
     \n\n
     g) Em determinada sala, as notas dos alunos são as seguintes:
     \n\n
@@ -277,7 +277,7 @@
 # Questão 18
 
 - Class: cmd_question
-  Output: "5a. Taxas de pulso de mulheres Com base no conjunto de dados 1 do apêndice B, as mulheres têm 
+  Output: "6a. Taxas de pulso de mulheres Com base no conjunto de dados 1 do apêndice B, as mulheres têm 
     taxas de pulso com uma média de 77,5 batimentos por minuto e um desvio padrão de 11,6 batimentos 
     por minuto. (Todas essas pulsações são medidas em repouso.) A partir de qual número os batimentos
     cardíacos são considerados acima no normal?
@@ -291,7 +291,7 @@
 # Questão 19
 
 - Class: cmd_question
-  Output: "5b. Taxas de pulso de homens com base no conjunto de dados 1 do apêndice B, os homens têm 
+  Output: "6b. Taxas de pulso de homens com base no conjunto de dados 1 do apêndice B, os homens têm 
     taxas de pulso com uma média de 67,3 batimentos por minuto e um desvio padrão de 10,3 batimentos 
     por minuto. (Todas essas pulsações são medidas em repouso.) A partir de qual número os batimentos
     cardíacos são considerados abaixo no normal?
@@ -306,7 +306,7 @@
 
 
 - Class: mult_question
-  Output: "6a. Qual medida dos quartis que equivale á mediana?"
+  Output: "7a. Qual medida dos quartis que equivale á mediana?"
   CorrectAnswer: Q2
   AnswerChoices: Q1;Q2;Q3;Q4
   AnswerTests: omnitest(correctVal='Q2')
@@ -324,7 +324,7 @@
 # Questão 22
 
 - Class: cmd_question
-  Output: "7a. A contagem de glóbulos vermelhos com base no conjunto de dados 1 do apêndice B, os 
+  Output: "8a. A contagem de glóbulos vermelhos com base no conjunto de dados 1 do apêndice B, os 
     homens têm contagens de glóbulos vermelhos com média de 5,072 e desvio padrão de 0,395, enquanto as 
     mulheres têm contagens de glóbulos vermelhos com média de 4,577 e desvio padrão de 0,382. 
     \n\n
@@ -338,7 +338,7 @@
 # Questão 23
 
 - Class: cmd_question
-  Output: "7b. A contagem de glóbulos vermelhos com base no conjunto de dados 1 do apêndice B, os 
+  Output: "8b. A contagem de glóbulos vermelhos com base no conjunto de dados 1 do apêndice B, os 
     homens têm contagens de glóbulos vermelhos com média de 5,072 e desvio padrão de 0,395, enquanto as 
     mulheres têm contagens de glóbulos vermelhos com média de 4,577 e desvio padrão de 0,382. 
     \n\n
@@ -352,7 +352,7 @@
 # Questão 24
 
 - Class: mult_question
-  Output: "7c. Quem tem a contagem mais alta em relação à amostra de onde veio: um 
+  Output: "8c. Quem tem a contagem mais alta em relação à amostra de onde veio: um 
     homem com uma contagem de 4,91 ou uma mulher com uma contagem de 4,32?"
   CorrectAnswer: Mulher
   AnswerChoices: Mulher;Homem
@@ -363,7 +363,7 @@
 # Questão 25
 
 - Class: mult_question
-  Output: "8. Amostragem Logo após a destruição das torres do World Trade Center, a America Online 
+  Output: "9. Amostragem Logo após a destruição das torres do World Trade Center, a America Online 
     fez uma pesquisa com seus assinantes da Internet e fez a seguinte pergunta: “As torres do World 
     Trade Center devem ser reconstruídas?” Entre as 1.304.240 respostas, 768.731 responderam “sim” 
     286.756 respondeu “não” e 248.753 disseram que era “muito cedo para decidir”. Dado o grande tamanho da 
